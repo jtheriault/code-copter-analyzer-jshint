@@ -19,7 +19,6 @@
     "nodemon": "^1.9.1"
   },
   "author": "Joe Theriault <joseph@yankoismedia.com> (http://www.josephtheriault.com)",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/jtheriault/code-copter-analyzer-jshint/issues"
   },
@@ -31,6 +30,7 @@
     "guide",
     "test"
   ],
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+ssh://git@github.com/jtheriault/code-copter-analyzer-jshint.git"

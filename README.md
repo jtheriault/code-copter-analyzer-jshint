@@ -3,7 +3,7 @@
 [![Build Status](https://travis-ci.org/jtheriault/code-copter-analyzer-jshint.svg)](https://travis-ci.org/jtheriault/code-copter-analyzer-jshint)
 
 ## Summary
-Analyzer plugin for code-copter v2 which uses JSHint.
+Analyzer plugin for code-copter which uses JSHint.
 
 ## Usage
 This plugin is included with the core Code-Copter package and doesn't need to be installed separately. However if you do install this separately (as a fork or to work around a lag updating the core package), this will take precedence.
