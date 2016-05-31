@@ -4,14 +4,20 @@
   "description": "Analyzer plugin for code-copter v2 which uses JSHint",
   "main": "src/index.js",
   "scripts": {
-    "clean": "rm -r coverage/ node_modules",
+    "clean": "rm -rf coverage/ node_modules npm-shrinkwrap.json",
+    "ls:todo": "egrep -nr '\\W+TODO\\W+.*$' src/ || echo 'Nothing to do.'",
+    "prepublish": "(in-publish && npm shrinkwrap) || (! in-publish && echo 'Skipping prepublish step')",
+    "preshrinkwrap": "rm -f npm-shrinkwrap.json",
+    "preversion": "npm test",
     "test": "JASMINE_CONFIG_PATH=jasmine.json istanbul cover --handle-sigint jasmine",
     "posttest": "istanbul check-coverage",
+    "postversion": "npm publish",
     "watch:test": "nodemon -w src -x npm test"
   },
   "dependencies": {
-    "code-copter-sdk": "^1.1.0",
-    "jshint": "^2.9.2"
+    "code-copter-sdk": "^1.2.0",
+    "jshint": "^2.9.2",
+    "nodemon": "^1.9.2"
   },
   "devDependencies": {
     "istanbul": "^0.4.3",
