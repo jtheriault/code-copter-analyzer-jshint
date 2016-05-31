@@ -15,11 +15,12 @@
     "watch:test": "nodemon -w src -x npm test"
   },
   "dependencies": {
-    "code-copter-sdk": "^1.2.0",
+    "code-copter-sdk": "^1.2.1",
     "jshint": "^2.9.2",
     "nodemon": "^1.9.2"
   },
   "devDependencies": {
+    "in-publish": "^2.0.0",
     "istanbul": "^0.4.3",
     "jasmine": "^2.4.1",
     "nodemon": "^1.9.1"
