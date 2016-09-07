@@ -25,6 +25,9 @@
     "jasmine": "^2.4.1",
     "nodemon": "^1.9.1"
   },
+  "peerDependencies": {
+    "code-copter": "^2.0.0"
+  },
   "author": "Joe Theriault <joseph@yankoismedia.com> (http://www.josephtheriault.com)",
   "bugs": {
     "url": "https://github.com/jtheriault/code-copter-analyzer-jshint/issues"
@@ -32,6 +35,7 @@
   "homepage": "https://github.com/jtheriault/code-copter-analyzer-jshint#readme",
   "keywords": [
     "code-copter",
+    "code-copter-analyzer",
     "jshint",
     "style",
     "guide",
